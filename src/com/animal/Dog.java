@@ -13,10 +13,11 @@ public class Dog extends Animal {
 		super(name, age);
 	}
 	
-	// dog make sound
+	// @author Masood
+
 	@Override
 	public void makeSound() {
-		System.out.println("Dog makes a sound");
+		System.out.println("Dog makes a sound... bhaw bhaw");
 	}
 	
 

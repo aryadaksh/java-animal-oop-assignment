@@ -9,9 +9,10 @@ public class Cat extends Animal {
 				// to initialize name and age.
 		super(name, age);
 	}
+	// @author Masood 
 	 @Override
 	    public void makeSound() {
-	        System.out.println("Cat makes a sound");
+	        System.out.println("Cat makes a sound Meow");
 	    }
 
 }
