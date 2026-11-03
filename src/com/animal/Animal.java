@@ -27,4 +27,20 @@ public class Animal {
 		if(age < 0) throw new IllegalArgumentException("Age must be greater then 0");
 		this.age = age;
 	}
+	
+	/**
+	 * @author Aaditya Kumar
+	 */
+	
+	public Animal() {
+		super();
+	}
+	
+	public Animal getInfo() {
+		System.out.println("Parent class: Animal of Covariant return type demonstartion");
+		Animal animal = new Animal();
+		return animal;
+	}
+
+	
 }

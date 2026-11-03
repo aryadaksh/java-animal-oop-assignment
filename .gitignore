@@ -1,0 +1,31 @@
+# Compiled Java files
+*.class
+
+# Build output directories
+bin/
+build/
+out/
+target/
+
+# Eclipse IDE metadata
+.metadata/
+.settings/
+.classpath
+.project
+.loadpath
+.recommenders/
+
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*~

@@ -13,12 +13,28 @@ public class Dog extends Animal {
 		super(name, age);
 	}
 	
-	// @author Masood
-
+	/**
+	 * @author Masood
+	 */
+	
 	@Override
 	public void makeSound() {
 		System.out.println("Dog makes a sound... bhaw bhaw");
 	}
 	
 
+	/**
+	 * @author Aaditya Kumar
+	 */
+	
+	public Dog() {
+		super();
+	}
+	
+	@Override
+	public Dog getInfo() {
+		System.out.println("Child class : Dog of Covariant return type demonstartion");
+		Dog dog = new Dog();
+		return dog;
+	}
 }
