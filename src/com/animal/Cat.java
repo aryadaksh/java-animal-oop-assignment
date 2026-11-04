@@ -11,6 +11,17 @@ public class Cat extends Animal {
 	}
 	
 	/**
+	 * @author daksh 
+	 */
+	
+	//Default Constructore
+	public Cat() {
+		super();
+	}
+
+
+
+	/**
 	 * @author Masood
 	 */
 	
@@ -19,4 +30,6 @@ public class Cat extends Animal {
         System.out.println("Cat makes a sound Meow");
     }
 
+	
+	
 }

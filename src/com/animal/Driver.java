@@ -22,6 +22,31 @@ public class Driver {
 		
 		System.out.println("Dog Name: " + dog.name);
 		System.out.println("Dog Age: " + dog.age);
+		
+		System.out.println("=================================");
+		System.out.println("Runtime Polymorphism Demonstration");
+		System.out.println("Author : Daksh Arya");
+		System.out.println("=================================");
+
+		/**
+		 * @author Daksh Arya
+		 */
+
+		// Animal reference pointing to Dog object
+		Animal dog1 = new Dog();
+
+		// Animal reference pointing to Cat object
+		Animal cat1 = new Cat();
+
+		// Runtime polymorphism
+		dog1.makeSound();
+		System.out.println();
+
+		cat1.makeSound();
+
+		System.out.println();
+		System.out.println("Runtime Polymorphism Verified");
+		
 	}
 
 }
