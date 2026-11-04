@@ -1,12 +1,13 @@
 package com.animal;
 
-public class Animal {
-	String name;
-	int age;
+public class Animal 
+{
+	private String name;
+	private int age;
 	
 	public Animal(String name, int age) {
-		validateName(name);
-		validateAge(age);
+		setName(name);
+		setAge(age);
 	}
 	
 	public void makeSound() {
@@ -16,16 +17,6 @@ public class Animal {
 	public void displayInfo() {
 		System.out.println("Animal Name: " + name);
 		System.out.println("Animal Age: " + age);
-	}
-	
-	private void validateName(String name) {
-		if(name.isEmpty() || name == null) throw new IllegalArgumentException("Enter a Valid name");
-		this.name = name;
-	}
-	
-	private void validateAge(int age) {
-		if(age < 0) throw new IllegalArgumentException("Age must be greater then 0");
-		this.age = age;
 	}
 	
 	/**
@@ -42,5 +33,29 @@ public class Animal {
 		return animal;
 	}
 
+	/**
+	 * @author Ashutosh
+	 */
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		if (name == null || name.trim().isEmpty()) {
+			throw new IllegalArgumentException("Name cannot be null or empty.");
+		}
+		this.name = name.trim();
+	}
+	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		if (age < 0) {
+			throw new IllegalArgumentException("Age cannot be negative.");
+		}
+		this.age = age;
+	}
 }
